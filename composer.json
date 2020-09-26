@@ -1,0 +1,24 @@
+{
+    "name": "xfxstudios/emcexcel",
+    "type": "library",
+    "description": "Gestión simple de Archivos Excel",
+    "keywords": ["Excel", "PhpSpreadSheet", "PHPExcel"],
+    "homepage": "https://github.com/xfxstudios/emcExcel",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Carlos Quintero",
+            "email": "cquintero@quinterdev.com",
+            "homepage": "https://quinterdev.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.2.0",
+        "phpoffice/phpspreadsheet":">=1.14.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Xfxstudios\\Excel\\": "src/"
+        }
+    }
+}
