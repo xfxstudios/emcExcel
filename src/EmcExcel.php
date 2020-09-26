@@ -1,5 +1,5 @@
 <?php
-namespace Xfxstudios\EmcExcel;
+namespace Xfxstudios\Excel;
 
 class EmcExcel{
 

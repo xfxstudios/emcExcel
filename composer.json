@@ -18,7 +18,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Xfxstudios\\EmcExcel\\": "src/"
+            "Xfxstudios\\Excel\\": "src/"
         }
     }
 }
