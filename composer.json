@@ -1,5 +1,5 @@
 {
-    "name": "xfxstudios/emcexcel",
+    "name": "easyexcel/emcexcel",
     "type": "library",
     "description": "Gestión simple de Archivos Excel",
     "keywords": ["Excel", "PhpSpreadSheet", "PHPExcel"],
