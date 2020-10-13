@@ -18,7 +18,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Xfxstudios\\Excel\\": "src/"
+            "Easyexcel\\Excel\\": "src/"
         }
     }
 }
