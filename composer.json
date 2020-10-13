@@ -2,7 +2,7 @@
     "name": "easyexcel/emcexcel",
     "type": "library",
     "description": "Gestión simple de Archivos Excel",
-    "keywords": ["Excel", "PhpSpreadSheet", "PHPExcel"],
+    "keywords": ["Excel", "PhpSpreadSheet", "PHPExcel","xfxstudios","PHP"],
     "homepage": "https://github.com/xfxstudios/emcExcel",
     "license": "MIT",
     "authors": [
