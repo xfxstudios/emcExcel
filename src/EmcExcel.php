@@ -1,5 +1,5 @@
 <?php
-namespace Xfxstudios\Excel;
+namespace Easyexcel\Excel;
 
 use PhpOffice\PhpSpreadsheet\Spreadsheet;
 use PhpOffice\PhpSpreadsheet\Writer\Xlsx as Creator;
