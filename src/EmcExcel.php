@@ -18,13 +18,6 @@ class EmcExcel{
         return "Init Test emcExcel Library";
     }
 
-
-        
-
-    public function __construct($debug=false){
-        $this->debug = $debug;
-    }
-
     //Setea el archivo a trabajar
     public function setFile($file){
         if(file_exists($this->dir.$file)){
