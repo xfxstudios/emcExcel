@@ -24,7 +24,7 @@ class EmcExcel{
             $this->file = $file;
             return $this;
         }else{
-            $e = new \Exception("El archivo <b>$file</b> no existe en el directorio $this->dir", 1);
+            $e = new \Exception("The file <b>$file</b> does not exist in the directory $this->dir", 1);
             throw $e;
         }
     }
@@ -37,7 +37,7 @@ class EmcExcel{
             $spreadsheet = $reader->load($this->dir.$this->file);
             return $spreadsheet;
         }
-        $e = new \Exception("Debe cargar un archivo Excel para procesar", 1);
+        $e = new \Exception("You must upload an Excel file to process", 1);
         throw $e;
     }
 
@@ -48,7 +48,7 @@ class EmcExcel{
 
     public function setData($a){
         if(!is_array($a)){
-            $e = new \Exception("Debe enviar un array", 1);
+            $e = new \Exception("You must send an array", 1);
             throw $e;
         }
         $this->array = $a;
@@ -62,7 +62,7 @@ class EmcExcel{
 
     public function setStyle($s){
         if(!is_array($s)){
-            $e = new \Exception("Debe enviar un array con los estilos", 1);
+            $e = new \Exception("You must send an array with the styles", 1);
             throw $e;           
         }
         $this->style = $s;
@@ -71,7 +71,7 @@ class EmcExcel{
 
     public function setDir($d){
         if(!file_exists($d)){
-            $e = new \Exception("El directorio indicado no existe", 1);
+            $e = new \Exception("The indicated directory does not exist", 1);
             throw $e;             
         }
         $this->dir = $d;
@@ -122,14 +122,14 @@ class EmcExcel{
         if(file_exists($this->dir.$this->name)){
             return $this->initRead()->getActiveSheet();
         }
-        $e = new \Exception("No existe un archivo procesado", 1);
+        $e = new \Exception("There is no processed file", 1);
         throw $e;
     }
 
     //Retorna la info como array
     public function getArrayData(){
         if($this->file=='' || !file_exists($this->dir.$this->file)){
-            $e  = new \Exception("No existe un archivo para procesar", 1);
+            $e  = new \Exception("There is no file to process", 1);
             throw $e;             
         }
         $worksheet   = $this->initRead()->getActiveSheet();
@@ -146,13 +146,13 @@ class EmcExcel{
         if(empty($config['array'])){
             $config['array'] = $this->getArrayData()[0];
             if(!$config['array']){
-                $e = new \Exception("Debe enviar un array", 1);
+                $e = new \Exception("You must send an array", 1);
                 throw $e;     
             }
         }
         if(!is_null($config['value'])){
             if(!is_array($config['array']) || !$config['array']){
-                $e = new \Exception("Debe enviar un array", 1);
+                $e = new \Exception("You must send an array", 1);
                 throw $e; 
             }
         }
@@ -170,11 +170,11 @@ class EmcExcel{
 
     public function createFile(){
         if(!$this->array){
-            $e = new \Exception("Debe enviar un array de datos para generar el archivo", 1);
+            $e = new \Exception("You must send an array of data to generate the file", 1);
             throw $e;                
         }
         if(!is_array($this->array[0])){
-            $e = new \Exception("El array debe ser multidimensional: [[valor,valor...],[valor,valor...]] ", 1);
+            $e = new \Exception("The array must be multidimensional: [[value, value ...], [value, value ...]] ", 1);
             throw $e; 
         }
 
